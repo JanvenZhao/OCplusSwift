@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OCplusSwift-Swift.h"
 
 @interface AppDelegate ()
             
@@ -19,9 +20,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    self.screenSize = self.window.bounds.size;
+    
+    RootVC *vc = [[RootVC alloc] init];
+    vc.title = @"汇率工具";
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    nav.navigationBar.tintColor = [UIColor grayColor];
+    self.window.rootViewController = nav;
+
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)print{
+
+    NSLog(@"Tap----and----Go");
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
