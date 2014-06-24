@@ -12,6 +12,14 @@
 		61030F9F1953D0AA004EDABE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61030F9E1953D0AA004EDABE /* Images.xcassets */; };
 		61030FAB1953D0AA004EDABE /* OCplusSwiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61030FAA1953D0AA004EDABE /* OCplusSwiftTests.m */; };
 		61030FB91953DE58004EDABE /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61030FB81953DE58004EDABE /* RootVC.swift */; };
+		ED81032F19546260002799B1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81032D19546260002799B1 /* CustomCell.swift */; };
+		ED81033019546260002799B1 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED81032E19546260002799B1 /* CustomCell.xib */; };
+		ED81033419547E50002799B1 /* ifly_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = ED81033319547E50002799B1 /* ifly_btn_h.png */; };
+		ED810336195523F1002799B1 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED810335195523F1002799B1 /* HttpRequest.swift */; };
+		ED81033E19553659002799B1 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = ED81033919553659002799B1 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ED81033F19553659002799B1 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = ED81033B19553659002799B1 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ED81034019553659002799B1 /* StringEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = ED81033D19553659002799B1 /* StringEncryption.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ED810342195538CB002799B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED810341195538CB002799B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,17 @@
 		61030FAA1953D0AA004EDABE /* OCplusSwiftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCplusSwiftTests.m; sourceTree = "<group>"; };
 		61030FB71953DE57004EDABE /* OCplusSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCplusSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		61030FB81953DE58004EDABE /* RootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
+		ED81032D19546260002799B1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		ED81032E19546260002799B1 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		ED81033319547E50002799B1 /* ifly_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ifly_btn_h.png; sourceTree = "<group>"; };
+		ED810335195523F1002799B1 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		ED81033819553659002799B1 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		ED81033919553659002799B1 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		ED81033A19553659002799B1 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		ED81033B19553659002799B1 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		ED81033C19553659002799B1 /* StringEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringEncryption.h; sourceTree = "<group>"; };
+		ED81033D19553659002799B1 /* StringEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringEncryption.m; sourceTree = "<group>"; };
+		ED810341195538CB002799B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED810342195538CB002799B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +100,14 @@
 				61030F9B1953D0AA004EDABE /* AppDelegate.h */,
 				61030F9C1953D0AA004EDABE /* AppDelegate.m */,
 				61030FB81953DE58004EDABE /* RootVC.swift */,
+				ED81032D19546260002799B1 /* CustomCell.swift */,
+				ED81032E19546260002799B1 /* CustomCell.xib */,
+				ED810335195523F1002799B1 /* HttpRequest.swift */,
+				ED81033719553648002799B1 /* Encoding */,
 				61030F9E1953D0AA004EDABE /* Images.xcassets */,
 				61030F971953D0AA004EDABE /* Supporting Files */,
 				61030FB71953DE57004EDABE /* OCplusSwift-Bridging-Header.h */,
+				ED810341195538CB002799B1 /* Foundation.framework */,
 			);
 			path = OCplusSwift;
 			sourceTree = "<group>";
@@ -90,6 +115,7 @@
 		61030F971953D0AA004EDABE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED81033219547E50002799B1 /* Resources */,
 				61030F981953D0AA004EDABE /* Info.plist */,
 				61030F991953D0AA004EDABE /* main.m */,
 			);
@@ -111,6 +137,27 @@
 				61030FA91953D0AA004EDABE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED81033219547E50002799B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED81033319547E50002799B1 /* ifly_btn_h.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED81033719553648002799B1 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				ED81033819553659002799B1 /* NSData+Base64.h */,
+				ED81033919553659002799B1 /* NSData+Base64.m */,
+				ED81033A19553659002799B1 /* NSString+URLEncoding.h */,
+				ED81033B19553659002799B1 /* NSString+URLEncoding.m */,
+				ED81033C19553659002799B1 /* StringEncryption.h */,
+				ED81033D19553659002799B1 /* StringEncryption.m */,
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED81033019546260002799B1 /* CustomCell.xib in Resources */,
 				61030F9F1953D0AA004EDABE /* Images.xcassets in Resources */,
+				ED81033419547E50002799B1 /* ifly_btn_h.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +260,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				61030FB91953DE58004EDABE /* RootVC.swift in Sources */,
+				ED810336195523F1002799B1 /* HttpRequest.swift in Sources */,
 				61030F9D1953D0AA004EDABE /* AppDelegate.m in Sources */,
+				ED81032F19546260002799B1 /* CustomCell.swift in Sources */,
 				61030F9A1953D0AA004EDABE /* main.m in Sources */,
+				ED81033F19553659002799B1 /* NSString+URLEncoding.m in Sources */,
+				ED81033E19553659002799B1 /* NSData+Base64.m in Sources */,
+				ED81034019553659002799B1 /* StringEncryption.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

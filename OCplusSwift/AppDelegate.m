@@ -25,6 +25,8 @@
     
     RootVC *vc = [[RootVC alloc] init];
     vc.title = @"汇率工具";
+    vc.width = self.screenSize.width;
+    vc.height = self.screenSize.height;
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     nav.navigationBar.tintColor = [UIColor grayColor];
     self.window.rootViewController = nav;
